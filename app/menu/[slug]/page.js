@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./page.module.scss";
 import recipeList from "../processed-recipes.js";
 
@@ -11,7 +12,12 @@ export default function Recipe({ params: { slug } }) {
   return (
     <section className={styles.Recipe}>
       <div className={styles.RecipeImage}>
-        <img src={"https://picsum.photos/400/300"} />
+        <Image
+          src={"https://picsum.photos/400/300"}
+          alt="Lorem picsum"
+          width={400}
+          height={300}
+        />
       </div>
       <div className="container">
         <div className={styles.RecipeDetails}>
