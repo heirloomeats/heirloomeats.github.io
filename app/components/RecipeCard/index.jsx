@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles.module.scss";
@@ -19,7 +20,12 @@ const RecipeCard = ({
     <article className={styles.RecipeCard} key={key}>
       <Link href={`/menu/${slug}`}>
         <div className={styles.RecipeImage}>
-          <img src={"https://picsum.photos/400/300"} />
+          <Image
+            src={"https://picsum.photos/400/300"}
+            alt="Lorem picsum"
+            width={400}
+            height={300}
+          />
         </div>
 
         <div className={styles.RecipeDetails}>
