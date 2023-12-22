@@ -1,0 +1,11 @@
+@use "../index" as *;
+
+header {
+  min-height: $header-height;
+  // position: fixed;
+  background-color: $header-bg;
+  // box-shadow: $shadow-styles;
+  // border-bottom: 1px solid $light-grey;
+  isolation: isolate;
+  z-index: 1;
+}

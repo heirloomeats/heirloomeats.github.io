@@ -1,0 +1,17 @@
+@use "../index" as *;
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+
+	// USE THE FOLLOWING TO OVERRIDE THE DEFAULT FONT-SIZE
+	// font-size: 16px;
+}
+
+body {
+	background-color: $body-bg;
+	// height: 100vh;
+	// position: relative;
+}

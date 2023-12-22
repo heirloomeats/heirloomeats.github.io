@@ -1,0 +1,75 @@
+@use "app/styles" as *;
+
+.RecipeCard {
+  width: 100%;
+  max-width: 350px;
+  // padding-bottom: rem(24);
+  border-radius: $border-radius-card;
+  box-shadow: $shadow-styles;
+  overflow: hidden;
+  background-color: $bg-recipe-card;
+
+  a {
+    margin: 0;
+    padding: 0;
+    // pointer-events: none;
+    box-shadow: unset;
+  }
+
+  .RecipeImage {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 4/3;
+    // border-radius: 8px;
+    // overflow: hidden;
+    // margin: 0 0 rem(16);
+  }
+
+  .RecipeDetails {
+    text-align: center;
+    padding: 20px;
+
+    .title,
+    .servingSize,
+    .time {
+      margin-bottom: rem(4);
+    }
+
+    .cookbook {
+      margin-top: rem(16);
+
+      p {
+        margin-bottom: rem(0);
+
+        &:first-of-type {
+          position: relative;
+          margin-bottom: rem(16);
+
+          &:before {
+            content: "~";
+            font-size: rem(24);
+            font-style: italic;
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            transform: translateX(-50%) rotate(13deg);
+          }
+
+          // &:after {
+          //   content: "=";
+          //   font-size: 0.95rem;
+          //   position: absolute;
+          //   bottom: -17px;
+          //   left: 50.3%;
+          //   transform: translateX(-50%) rotate(-60deg);
+          // }
+        }
+      }
+
+      // .bookTitle,
+      // .bookAuthor {
+      //   font-size: rem(19);
+      // }
+    }
+  }
+}

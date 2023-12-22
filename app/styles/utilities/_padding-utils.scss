@@ -1,0 +1,546 @@
+@use "../base/media-queries" as *;
+
+// padding utilities
+.pt {
+	&-0 {
+		padding-top: 0 !important;
+	}
+	&-1 {
+		padding-top: 0.5rem !important;
+	}
+	&-2 {
+		padding-top: 1rem !important;
+	}
+	&-3 {
+		padding-top: 2rem !important;
+	}
+	&-4 {
+		padding-top: 3rem !important;
+	}
+	&-5 {
+		padding-top: 4rem !important;
+	}
+
+	&-sm {
+		@include break-point(mobile-landscape) {
+			&-0 {
+				padding-top: 0 !important;
+			}
+			&-1 {
+				padding-top: 0.5rem !important;
+			}
+			&-2 {
+				padding-top: 1rem !important;
+			}
+			&-3 {
+				padding-top: 2rem !important;
+			}
+			&-4 {
+				padding-top: 3rem !important;
+			}
+			&-5 {
+				padding-top: 4rem !important;
+			}
+		}
+	}
+
+	&-md {
+		@include break-point(tablet) {
+			&-0 {
+				padding-top: 0 !important;
+			}
+			&-1 {
+				padding-top: 0.5rem !important;
+			}
+			&-2 {
+				padding-top: 1rem !important;
+			}
+			&-3 {
+				padding-top: 2rem !important;
+			}
+			&-4 {
+				padding-top: 3rem !important;
+			}
+			&-5 {
+				padding-top: 4rem !important;
+			}
+		}
+	}
+
+	&-lg {
+		@include break-point(desktop) {
+			&-0 {
+				padding-top: 0 !important;
+			}
+			&-1 {
+				padding-top: 0.5rem !important;
+			}
+			&-2 {
+				padding-top: 1rem !important;
+			}
+			&-3 {
+				padding-top: 2rem !important;
+			}
+			&-4 {
+				padding-top: 3rem !important;
+			}
+			&-5 {
+				padding-top: 4rem !important;
+			}
+		}
+	}
+
+	&-xl {
+		@include break-point(desktop-lg) {
+			&-0 {
+				padding-top: 0 !important;
+			}
+			&-1 {
+				padding-top: 0.5rem !important;
+			}
+			&-2 {
+				padding-top: 1rem !important;
+			}
+			&-3 {
+				padding-top: 2rem !important;
+			}
+			&-4 {
+				padding-top: 3rem !important;
+			}
+			&-5 {
+				padding-top: 4rem !important;
+			}
+		}
+	}
+
+	&-xxl {
+		@include break-point(desktop-xl) {
+			&-0 {
+				padding-top: 0 !important;
+			}
+			&-1 {
+				padding-top: 0.5rem !important;
+			}
+			&-2 {
+				padding-top: 1rem !important;
+			}
+			&-3 {
+				padding-top: 2rem !important;
+			}
+			&-4 {
+				padding-top: 3rem !important;
+			}
+			&-5 {
+				padding-top: 4rem !important;
+			}
+		}
+	}
+}
+
+.pb {
+	&-0 {
+		padding-bottom: 0 !important;
+	}
+	&-1 {
+		padding-bottom: 0.5rem !important;
+	}
+	&-2 {
+		padding-bottom: 1rem !important;
+	}
+	&-3 {
+		padding-bottom: 2rem !important;
+	}
+	&-4 {
+		padding-bottom: 3rem !important;
+	}
+	&-5 {
+		padding-bottom: 4rem !important;
+	}
+
+	&-sm {
+		@include break-point(mobile-landscape) {
+			&-0 {
+				padding-bottom: 0 !important;
+			}
+			&-1 {
+				padding-bottom: 0.5rem !important;
+			}
+			&-2 {
+				padding-bottom: 1rem !important;
+			}
+			&-3 {
+				padding-bottom: 2rem !important;
+			}
+			&-4 {
+				padding-bottom: 3rem !important;
+			}
+			&-5 {
+				padding-bottom: 4rem !important;
+			}
+		}
+	}
+
+	&-md {
+		@include break-point(tablet) {
+			&-0 {
+				padding-bottom: 0 !important;
+			}
+			&-1 {
+				padding-bottom: 0.5rem !important;
+			}
+			&-2 {
+				padding-bottom: 1rem !important;
+			}
+			&-3 {
+				padding-bottom: 2rem !important;
+			}
+			&-4 {
+				padding-bottom: 3rem !important;
+			}
+			&-5 {
+				padding-bottom: 4rem !important;
+			}
+		}
+	}
+
+	&-lg {
+		@include break-point(desktop) {
+			&-0 {
+				padding-bottom: 0 !important;
+			}
+			&-1 {
+				padding-bottom: 0.5rem !important;
+			}
+			&-2 {
+				padding-bottom: 1rem !important;
+			}
+			&-3 {
+				padding-bottom: 2rem !important;
+			}
+			&-4 {
+				padding-bottom: 3rem !important;
+			}
+			&-5 {
+				padding-bottom: 4rem !important;
+			}
+		}
+	}
+
+	&-xl {
+		@include break-point(desktop-lg) {
+			&-0 {
+				padding-bottom: 0 !important;
+			}
+			&-1 {
+				padding-bottom: 0.5rem !important;
+			}
+			&-2 {
+				padding-bottom: 1rem !important;
+			}
+			&-3 {
+				padding-bottom: 2rem !important;
+			}
+			&-4 {
+				padding-bottom: 3rem !important;
+			}
+			&-5 {
+				padding-bottom: 4rem !important;
+			}
+		}
+	}
+
+	&-xxl {
+		@include break-point(desktop-xl) {
+			&-0 {
+				padding-bottom: 0 !important;
+			}
+			&-1 {
+				padding-bottom: 0.5rem !important;
+			}
+			&-2 {
+				padding-bottom: 1rem !important;
+			}
+			&-3 {
+				padding-bottom: 2rem !important;
+			}
+			&-4 {
+				padding-bottom: 3rem !important;
+			}
+			&-5 {
+				padding-bottom: 4rem !important;
+			}
+		}
+	}
+}
+
+.pl {
+	&-0 {
+		padding-left: 0 !important;
+	}
+	&-1 {
+		padding-left: 0.5rem !important;
+	}
+	&-2 {
+		padding-left: 1rem !important;
+	}
+	&-3 {
+		padding-left: 2rem !important;
+	}
+	&-4 {
+		padding-left: 3rem !important;
+	}
+	&-5 {
+		padding-left: 4rem !important;
+	}
+
+	&-sm {
+		@include break-point(mobile-landscape) {
+			&-0 {
+				padding-left: 0 !important;
+			}
+			&-1 {
+				padding-left: 0.5rem !important;
+			}
+			&-2 {
+				padding-left: 1rem !important;
+			}
+			&-3 {
+				padding-left: 2rem !important;
+			}
+			&-4 {
+				padding-left: 3rem !important;
+			}
+			&-5 {
+				padding-left: 4rem !important;
+			}
+		}
+	}
+
+	&-md {
+		@include break-point(tablet) {
+			&-0 {
+				padding-left: 0 !important;
+			}
+			&-1 {
+				padding-left: 0.5rem !important;
+			}
+			&-2 {
+				padding-left: 1rem !important;
+			}
+			&-3 {
+				padding-left: 2rem !important;
+			}
+			&-4 {
+				padding-left: 3rem !important;
+			}
+			&-5 {
+				padding-left: 4rem !important;
+			}
+		}
+	}
+
+	&-lg {
+		@include break-point(desktop) {
+			&-0 {
+				padding-left: 0 !important;
+			}
+			&-1 {
+				padding-left: 0.5rem !important;
+			}
+			&-2 {
+				padding-left: 1rem !important;
+			}
+			&-3 {
+				padding-left: 2rem !important;
+			}
+			&-4 {
+				padding-left: 3rem !important;
+			}
+			&-5 {
+				padding-left: 4rem !important;
+			}
+		}
+	}
+
+	&-xl {
+		@include break-point(desktop-lg) {
+			&-0 {
+				padding-left: 0 !important;
+			}
+			&-1 {
+				padding-left: 0.5rem !important;
+			}
+			&-2 {
+				padding-left: 1rem !important;
+			}
+			&-3 {
+				padding-left: 2rem !important;
+			}
+			&-4 {
+				padding-left: 3rem !important;
+			}
+			&-5 {
+				padding-left: 4rem !important;
+			}
+		}
+	}
+
+	&-xxl {
+		@include break-point(desktop-xl) {
+			&-0 {
+				padding-left: 0 !important;
+			}
+			&-1 {
+				padding-left: 0.5rem !important;
+			}
+			&-2 {
+				padding-left: 1rem !important;
+			}
+			&-3 {
+				padding-left: 2rem !important;
+			}
+			&-4 {
+				padding-left: 3rem !important;
+			}
+			&-5 {
+				padding-left: 4rem !important;
+			}
+		}
+	}
+}
+
+.pr {
+	&-0 {
+		padding-right: 0 !important;
+	}
+	&-1 {
+		padding-right: 0.5rem !important;
+	}
+	&-2 {
+		padding-right: 1rem !important;
+	}
+	&-3 {
+		padding-right: 2rem !important;
+	}
+	&-4 {
+		padding-right: 3rem !important;
+	}
+	&-5 {
+		padding-right: 4rem !important;
+	}
+
+	&-sm {
+		@include break-point(mobile-landscape) {
+			&-0 {
+				padding-right: 0 !important;
+			}
+			&-1 {
+				padding-right: 0.5rem !important;
+			}
+			&-2 {
+				padding-right: 1rem !important;
+			}
+			&-3 {
+				padding-right: 2rem !important;
+			}
+			&-4 {
+				padding-right: 3rem !important;
+			}
+			&-5 {
+				padding-right: 4rem !important;
+			}
+		}
+	}
+
+	&-md {
+		@include break-point(tablet) {
+			&-0 {
+				padding-right: 0 !important;
+			}
+			&-1 {
+				padding-right: 0.5rem !important;
+			}
+			&-2 {
+				padding-right: 1rem !important;
+			}
+			&-3 {
+				padding-right: 2rem !important;
+			}
+			&-4 {
+				padding-right: 3rem !important;
+			}
+			&-5 {
+				padding-right: 4rem !important;
+			}
+		}
+	}
+
+	&-lg {
+		@include break-point(desktop) {
+			&-0 {
+				padding-right: 0 !important;
+			}
+			&-1 {
+				padding-right: 0.5rem !important;
+			}
+			&-2 {
+				padding-right: 1rem !important;
+			}
+			&-3 {
+				padding-right: 2rem !important;
+			}
+			&-4 {
+				padding-right: 3rem !important;
+			}
+			&-5 {
+				padding-right: 4rem !important;
+			}
+		}
+	}
+
+	&-xl {
+		@include break-point(desktop-lg) {
+			&-0 {
+				padding-right: 0 !important;
+			}
+			&-1 {
+				padding-right: 0.5rem !important;
+			}
+			&-2 {
+				padding-right: 1rem !important;
+			}
+			&-3 {
+				padding-right: 2rem !important;
+			}
+			&-4 {
+				padding-right: 3rem !important;
+			}
+			&-5 {
+				padding-right: 4rem !important;
+			}
+		}
+	}
+
+	&-xxl {
+		@include break-point(desktop-xl) {
+			&-0 {
+				padding-right: 0 !important;
+			}
+			&-1 {
+				padding-right: 0.5rem !important;
+			}
+			&-2 {
+				padding-right: 1rem !important;
+			}
+			&-3 {
+				padding-right: 2rem !important;
+			}
+			&-4 {
+				padding-right: 3rem !important;
+			}
+			&-5 {
+				padding-right: 4rem !important;
+			}
+		}
+	}
+}

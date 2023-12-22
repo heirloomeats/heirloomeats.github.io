@@ -1,0 +1,41 @@
+$base-font-size: 16;
+
+/* 
+  CONVERT PIXELS TO EM 
+  - ems are calculated from the computed font-size on the parent element
+  - if the font-size of the parent is increased, the ems will increase proportionally (and vice versa)
+  - this allows us to build a component that is responsive to the font-size of the parent element 
+*/
+@function em($pixels, $context: $base-font-size) {
+  @return calc($pixels / $context) * 1em;
+}
+/*
+  Usage Example:
+    h1 {
+      margin: em(32) auto; // margin: 2em auto;
+    }
+
+    .btn {
+      padding: em(8) em(16); // padding: 0.5em 1em;
+    }
+*/
+
+/* 
+  CONVERT PIXELS TO REM 
+  - rems are calculated from the base font-size on the root element of the document
+  - the root element is ALWAYS the HTML element
+  - if the user has changed the base font-size of their browser, or adjusted the page zoom, the rems will change proportionally
+*/
+@function rem($pixels, $context: $base-font-size) {
+  @return calc($pixels / $context) * 1rem;
+}
+/*
+  Usage Example:
+    h1 {
+      font-size: rem(32); // font-size: 2rem;
+    }
+
+    p {
+      font-size: rem(24); // font-size: 1.5rem;
+    }
+*/

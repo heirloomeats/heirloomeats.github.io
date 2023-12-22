@@ -1,0 +1,35 @@
+// VISIBILITY --------------------------------------
+// To hide an element from view
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+// baseline classes for extension
+.bg-image-baseline {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+// VIDEOS --------------------------------------
+.video-aspect-wrapper {
+  width: 100%;
+  height: 56.25%;
+}
+
+// SHADOWS --------------------------------------
+// .box-shadow {
+//   box-shadow: $shadow-styles;
+// }
+
+// .drop-shadow {
+// 	filter: drop-shadow($shadow-styles);
+// }

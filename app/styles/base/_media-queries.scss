@@ -1,0 +1,57 @@
+// ==========================================================================
+// Media Queries
+// ==========================================================================
+
+/*
+max_width_site var should match the width of the desktop Zeplin/PSD for your project.
+We don't want the site content to expand forever on larger screens.
+On occasion we are handed off desktop designs with the desktop min-with, when that happens please ask the designers for the max-width value.
+*/
+
+/* Per MDN: Media Query breakpoints should be coded in EMs to best accomodate users who adjust the site's base font-size within their browser's settings */
+@use "functions" as *;
+
+$max_width_site: 1920px;
+
+@mixin break-point($point) {
+	@if $point == mobile {
+		@media (min-width: em(375)) {
+			@content;
+		}
+	} @else if $point == mobile-landscape {
+		// breakpoint for > 150% zoom and browser font setting: Very Large
+		@media (min-width: em(576)) {
+			@content;
+		}
+	} @else if $point == tablet {
+		// breakpoint for 100-150% zoom and browser font setting: Large
+		@media (min-width: em(768)) {
+			@content;
+		}
+	} @else if $point == desktop {
+		// breakpoint for =< 100% zoom and =< browser font setting: Medium
+		@media (min-width: em(992)) {
+			@content;
+		}
+	} @else if $point == desktop-lg {
+		@media (min-width: em(1200)) {
+			@content;
+		}
+	} @else if $point == desktop-xl {
+		@media (min-width: em(1400)) {
+			@content;
+		}
+	} @else if $point == site-max-width {
+		@media (min-width: $max_width_site) {
+			@content;
+		}
+	}
+}
+
+/*
+Usage Example:
+
+@include break-point(desktop) {
+  width: 100%;
+}
+*/

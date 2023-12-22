@@ -1,0 +1,41 @@
+// MIXIN FOR FONT STYLING
+@mixin font($font_family: false, 
+            $font_size: false, 
+            $line_height: false, 
+            $font_weight: false, 
+            $color: false) {
+  @if $font_family { font-family: $font_family, sans-serif; }
+  @if $font_size { font-size: $font_size; }
+  @if $line_height { line-height: $line_height; }
+  @if $font_weight { font-weight: $font_weight; }
+  @if $color { color: $color; }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600;700&display=swap");
+
+// @font-face {
+// 	font-family: "Font_Name";
+// 	src: local(Cera-Pro-Regular),
+// 		url("/path/to/font/filename.ttf") format("truetype"),
+// 		url("/path/to/font/filename.woff2") format("woff2"),
+// 		url("/path/to/font/filename.woff") format("woff");
+// 	font-display: swap;
+// }
+
+/* Font Family variables */
+$fontFamily-body: Helvetica, sans-serif;
+$fontFamily-h1: Helvetica, sans-serif;
+$fontFamily-h2: Helvetica, sans-serif;
+$fontFamily-h3: Helvetica, sans-serif;
+$fontFamily-h4: Helvetica, sans-serif;
+$fontFamily-h5: Helvetica, sans-serif;
+$fontFamily-h6: Helvetica, sans-serif;
+$fontFamily-p: Helvetica, sans-serif;
+$fontFamily-footnote: Helvetica, sans-serif;
+$fontFamily-a: inherit;
+$fontFamily-button: Helvetica, sans-serif;
+$fontFamily-li: Helvetica, sans-serif;
+$fontFamily-label: Helvetica, sans-serif;
+$fontFamily-input: Helvetica, sans-serif;
+$fontFamily-th: Helvetica, sans-serif;
+$fontFamily-td: Helvetica, sans-serif;

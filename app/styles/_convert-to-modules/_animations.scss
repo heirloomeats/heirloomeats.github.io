@@ -1,0 +1,29 @@
+// animation is triggered by adding the .animated class to the body element
+// when the animation is done running, the Animation.js module will remove the .animated class from the body element
+// this allows the page to continue being interactive/responsive without retriggering the animations
+
+$animationDuration: 2s;
+$animationDelay: 1s;
+
+.animated-element {
+	// body.animated nav {
+	@include break-point(desktop) {
+		animation-name: slideLeft;
+		animation-duration: $animationDuration;
+		animation-delay: $animationDelay;
+		animation-fill-mode: forwards;
+		visibility: hidden;
+	}
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(100%);
+		visibility: visible;
+	}
+
+	100% {
+		transform: translateX(-50%);
+		visibility: visible;
+	}
+}

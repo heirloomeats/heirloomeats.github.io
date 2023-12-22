@@ -1,0 +1,77 @@
+@use "../index" as *;
+
+table {
+  width: 100%;
+  margin: 0 auto;
+
+  thead {
+    tr {
+      width: 100%;
+      border-bottom: 2px solid $td-border;
+
+      &:first-of-type {
+        margin-top: 0;
+        border: none;
+      }
+
+      th {
+        padding: 5px;
+        @include font($fontFamily-th, rem(20), rem(22), bold, $black);
+        text-align: center;
+        border-right: 1px solid $td-border;
+
+        @include break-point(desktop) {
+          font-size: rem(22);
+          line-height: rem(24);
+        }
+
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      width: 100%;
+
+      // &:nth-child(2n) {
+      // 	background-color: $alt-body-table-row;
+      // }
+
+      td {
+        padding: 5px;
+        @include font($fontFamily-td, rem(16), rem(18), normal, $black);
+        text-align: center;
+        // border-right: 1px solid $td-border;
+
+        @include break-point(desktop) {
+          font-size: rem(19);
+          line-height: rem(20);
+        }
+
+        &:last-of-type {
+          border-right: none;
+
+          .recipe-ingredients & {
+            text-align: right;
+          }
+        }
+
+        span {
+          font-size: rem(15);
+          display: block;
+
+          @include break-point(mobile) {
+            display: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .border-bottom {
+    border-bottom: 2px solid $td-border;
+  }
+}
