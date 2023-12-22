@@ -1,0 +1,20 @@
+@use "../index" as *;
+
+ul,
+ol {
+	list-style: revert;
+	padding-left: 20px;
+	margin: 1rem 0;
+
+	// &:first-of-type {
+	// 	margin-top: 0;
+	// }
+
+	li {
+		margin-top: 0.75rem;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+}

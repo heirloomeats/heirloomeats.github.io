@@ -1,0 +1,34 @@
+@use "../index" as *;
+
+.container {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: $max_width_site;
+	padding: 0 15px;
+	margin: 0 auto;
+	position: relative;
+
+	// @include break-point(mobile) {
+	// 	max-width: 360px;
+	// }
+	@include break-point(mobile-landscape) {
+		max-width: 540px;
+	}
+	@include break-point(tablet) {
+		max-width: 720px;
+	}
+	@include break-point(desktop) {
+		max-width: 960px;
+	}
+	@include break-point(desktop-lg) {
+		max-width: 1140px;
+	}
+	@include break-point(desktop-xl) {
+		max-width: 1320px;
+	}
+
+	&-fluid {
+		width: 100%;
+		position: relative;
+	}
+}

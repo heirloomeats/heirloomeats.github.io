@@ -1,0 +1,117 @@
+@use "../../styles/" as *;
+
+.Recipe {
+  width: 100%;
+  max-width: 350px;
+  padding-bottom: rem(12);
+  // border: 1px solid #333;
+  border-radius: $border-radius-card;
+  box-shadow: $shadow-styles;
+  overflow: hidden;
+  background-color: $bg-recipe-card;
+
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-bottom: 0;
+  }
+
+  .title,
+  .servingSize,
+  .time {
+    margin-bottom: rem(4);
+  }
+
+  hr {
+    width: 20%;
+    margin: rem(32) auto;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 0 0 rem(8);
+    }
+  }
+
+  &Image {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 4/3;
+    // margin: rem(16) 0 rem(24);
+    border-radius: 0px;
+    // overflow: hidden;
+  }
+
+  &Details {
+    text-align: center;
+    padding: 20px 20px 5px;
+
+    .title,
+    .servingSize,
+    .time {
+      margin-bottom: rem(4);
+    }
+
+    .cookbook {
+      margin-top: rem(16);
+
+      p {
+        margin-bottom: rem(0);
+
+        &:first-of-type {
+          position: relative;
+          margin-bottom: rem(16);
+
+          &:before {
+            content: "~";
+            font-size: rem(24);
+            font-style: italic;
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            transform: translateX(-50%) rotate(13deg);
+          }
+
+          // &:after {
+          //   content: "=";
+          //   font-size: 0.95rem;
+          //   position: absolute;
+          //   bottom: -17px;
+          //   left: 50.3%;
+          //   transform: translateX(-50%) rotate(-60deg);
+          // }
+        }
+      }
+
+      // .bookTitle,
+      // .bookAuthor {
+      //   font-size: rem(19);
+      // }
+    }
+  }
+
+  &Ingredients {
+    ul {
+      padding: 0;
+    }
+
+    td {
+      padding: 0 rem(5);
+
+      &:first-of-type {
+        width: 25%;
+        text-align: right;
+      }
+      &:last-of-type {
+        text-align: left;
+      }
+    }
+  }
+
+  // &Directions {}
+}

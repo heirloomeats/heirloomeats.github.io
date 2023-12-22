@@ -1,0 +1,8 @@
+@use "app/styles" as *;
+
+.Canvas {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 300/150;
+  box-shadow: inset 0 0 0 1px $black;
+}

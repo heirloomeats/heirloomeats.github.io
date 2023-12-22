@@ -1,0 +1,26 @@
+@use "./styles" as *;
+
+.main {
+  @extend .bg-image-baseline;
+  position: relative; // needed for bg image
+  display: block; // needed for bg image
+  isolation: isolate;
+  z-index: 1;
+
+  // &:after {
+  //   content: "";
+  //   width: 100vw;
+  //   height: 100vh;
+  //   background-color: $white;
+  //   opacity: 0.1;
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: -1;
+  // }
+}
+
+.contentBuffer {
+  height: 100vh;
+  padding: $header-height 0 $nav-hotspot-height;
+}

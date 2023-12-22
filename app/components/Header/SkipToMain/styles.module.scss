@@ -1,0 +1,17 @@
+@use "app/styles" as *;
+
+.SkipToMain {
+	background-color: $white;
+	color: #f00;
+	padding: 8px 12px;
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	&:focus,
+	&:focus-visible,
+	&:focus-within {
+		top: 30px;
+	}
+}

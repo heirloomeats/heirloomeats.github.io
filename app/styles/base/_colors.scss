@@ -1,0 +1,65 @@
+/* General Colors */
+$light-grey: #adabab;
+$grey: #707070;
+$dark-grey: #333;
+$black: #000000;
+$white: #ffffff;
+$taupe: #faf8f7;
+$error-red: #ff0000;
+$shadow: rgba(0, 0, 0, 0.6);
+$border-opaque: rgba(0, 0, 0, 0.3);
+$modal-bg: rgba(0, 0, 0, 0.6);
+
+/* Font Default Colors */
+$font-body: $black;
+$font-h1: $black;
+$font-h2: $black;
+$font-h3: $black;
+$font-h4: $black;
+$font-h5: $black;
+$font-h6: $black;
+$font-p: $black;
+$font-footnote: $black;
+$font-a: inherit;
+$font-button: $black;
+$font-li: $black;
+
+$shadow-styles: 3px 5px 10px 3px rgba(10, 10, 10, 0.3);
+
+/* ADA Colors */
+$focus-ring: #11cc11;
+
+/* Brand Colors */
+
+// Layout colors
+$body-bg: $white;
+
+/* Component Specific Colors */
+/* Navigation */
+$header-bg: $white;
+$nav-menu-bg: $white;
+$mobile-menu-wrapper-bg: rgba(211, 211, 211, 0.7);
+$nav-copy: $black;
+$nav-border: #d3d3d3;
+$nav-button-bg: #e0e0f3;
+$nav-button-copy: $black;
+$nav-button-bg-active: #e0e0f3;
+$nav-button-copy-active: $black;
+$logic-menu-bg: rgba(238, 240, 248, 0.8);
+$skip-content-bg: $white;
+$skip-content-copy: $black;
+
+/* Buttons */
+$default-button-bg: #fb6028;
+$default-button-font: $white;
+$default-button-border: $grey;
+
+/* Forms */
+$color-filter_label: #000;
+
+/* Tables */
+$td-border: $grey;
+$alt-body-table-row: rgba(0, 0, 0, 0.1);
+
+/* Cards */
+$bg-recipe-card: $taupe;

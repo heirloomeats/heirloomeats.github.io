@@ -1,0 +1,212 @@
+// $base-font-size can be found in the _functions.scss file
+@use "../index" as *;
+
+// html {
+// 	// specifying an html font-size will remove the ability of the user to set their own font-size in the browser
+// 	// (THIS IS NON-ADA COMPLIENT)
+// 	font-size: #{$base-font-size}px;
+// }
+
+body {
+  @include font(
+    $fontFamily-body,
+    rem($base-font-size),
+    1.2em,
+    normal,
+    $font-body
+  );
+
+  @include break-point(desktop) {
+    font-size: rem(($base-font-size * 1.2));
+    // line-height: rem(22);
+  }
+}
+
+h1,
+.h1 {
+  padding: 0;
+  margin: 0 0 rem(32);
+  @include font($fontFamily-h1, rem(28), 1.1em, bold, $font-h1);
+
+  @include break-point(desktop) {
+    font-size: rem(32);
+    // line-height: rem(34);
+  }
+}
+
+h2,
+.h2 {
+  padding: 0;
+  margin: 0 0 rem(24);
+  @include font($fontFamily-h2, rem(24), 1.1em, bold, $font-h2);
+
+  @include break-point(desktop) {
+    font-size: rem(28);
+    // line-height: rem(30);
+  }
+
+  // .recipe-hero & {
+  // 	margin: 0 auto rem(16);
+  // 	font-weight: bold;
+  // 	text-align: center;
+  // }
+}
+
+h3,
+.h3 {
+  padding: 0;
+  margin: 0 0 rem(24);
+  @include font($fontFamily-h3, rem(22), 1.1em, bold, $font-h3);
+
+  @include break-point(desktop) {
+    font-size: rem(24);
+    // line-height: rem(26);
+  }
+
+  .recipeDetails & {
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+h4,
+.h4 {
+  padding: 0;
+  margin: 0 0 rem(24);
+  @include font($fontFamily-h4, rem(20), 1.2em, bold, $font-h4);
+
+  @include break-point(desktop) {
+    font-size: rem(22);
+    // line-height: rem(24);
+  }
+}
+
+h5,
+.h5 {
+  padding: 0;
+  margin: 0 0 rem(16);
+  @include font($fontFamily-h5, rem(19), 1.2em, bold, $font-h5);
+
+  @include break-point(desktop) {
+    font-size: rem(20);
+    // line-height: rem(22);
+  }
+}
+
+h6,
+.h6 {
+  padding: 0;
+  margin: 0 0 rem(16);
+  @include font($fontFamily-h6, rem(16), 1.2em, bold, $font-h6);
+
+  @include break-point(desktop) {
+    font-size: rem(19);
+    // line-height: rem(20);
+  }
+}
+
+p,
+.p {
+  padding: 0;
+  margin: 0 0 rem(16);
+  @include font($fontFamily-p, inherit, 1.2em, normal, $font-p);
+
+  @include break-point(desktop) {
+    font-size: rem(19);
+    // line-height: rem(20);
+  }
+
+  // .recipe-hero & {
+  // 	margin: rem(4) auto 0;
+  // 	line-height: rem(18);
+  // 	text-align: center;
+  // }
+}
+
+a,
+button {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+a {
+  padding: inherit;
+  margin: inherit;
+  @include font($fontFamily-a, inherit, inherit, inherit, $font-a);
+
+  @include break-point(desktop) {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+button {
+  margin: 0;
+  @include font($fontFamily-button, rem(19), 1.2em, bold, $font-button);
+
+  @include break-point(desktop) {
+    font-size: rem(20);
+    // line-height: rem(22);
+  }
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 rem(16);
+
+  // .recipe-directions & {
+  // 	margin-top: rem(8);
+  // }
+
+  li {
+    margin: 0 0 rem(16);
+    @include font($fontFamily-li, rem(16), 1.2em, normal, $font-li);
+    // list-style-type: disc;
+
+    @include break-point(desktop) {
+      font-size: rem(19);
+      // line-height: rem(24);
+    }
+
+    &::marker {
+      color: currentColor;
+    }
+  }
+}
+
+sup {
+  font-size: 0.65em;
+  position: relative;
+  top: -0.65em;
+  left: 0.1em;
+}
+
+.footnote {
+  margin: 0 0 rem(16);
+  @include font($fontFamily-footnote, rem(10), 1.2em, normal, $font-footnote);
+  text-align: left;
+
+  @include break-point(desktop) {
+    font-size: rem(12);
+    // line-height: rem(14);
+  }
+}
+
+.hang-footnote {
+  margin-left: -7px;
+}
+
+.bold,
+strong {
+  font-weight: bold;
+}
+
+.italic,
+em {
+  font-style: italic;
+}

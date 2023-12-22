@@ -1,0 +1,14 @@
+@use "app/styles" as *;
+
+.card {
+  padding: rem(20) 20px;
+  margin: rem(50) auto 0;
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 8px;
+  box-shadow: $shadow-styles;
+
+  .conversion-tables & {
+    padding: rem(20) 15px;
+  }
+}

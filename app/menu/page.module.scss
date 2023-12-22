@@ -1,0 +1,15 @@
+// Make the recipe cards in the menu stack
+// and flip up like the cards on the
+// Amazon RDS site, Customers section
+// https://aws.amazon.com/rds/
+@use "../styles/" as *;
+
+.Menu {
+  @extend .flex-column-start-center;
+  gap: 30px;
+  padding: 20px 0;
+
+  h1 {
+    color: green;
+  }
+}

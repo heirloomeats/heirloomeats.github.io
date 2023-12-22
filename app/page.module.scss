@@ -1,0 +1,13 @@
+@use "./styles" as *;
+
+.Home {
+  @extend .flex-column-center-center;
+  height: 576px;
+  padding: 20px 0;
+
+  h1,
+  p {
+    color: $white;
+    text-align: center;
+  }
+}
